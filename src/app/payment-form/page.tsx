@@ -13,6 +13,7 @@ import Select from "react-select";
 import { SingleValue } from "react-select";
 
 const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
 
 interface FormData {
   name: string;
@@ -246,7 +247,7 @@ export default function AuraScanForm() {
             </label>
 
             <img
-              src={"/images/PaymentFormImage.jpg"}
+              src={`${basePath}/images/PaymentFormImage.jpg`}
               alt="Uploaded Preview"
               className="mb-4 h-full w-full"
             />
