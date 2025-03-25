@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
@@ -60,7 +60,7 @@ export default function AuraScanForm() {
     script.src = "https://checkout.razorpay.com/v1/payment-button.js";
     script.setAttribute(
       "data-payment_button_id",
-      formData.reportType === "499" ? "pl_Q9fj5zfW27sJeG" : "pl_Q9fmdlVVCe8zDl"
+      formData.reportType === "499" ? "pl_QAKp9K9Fp1ecHO" : "pl_QAKyBw8dCXtE3M"
     );
     script.async = true;
     script.id = "razorpay-script";
@@ -264,11 +264,12 @@ export default function AuraScanForm() {
               className="mb-4"
             >
               <label className="flex items-center gap-2">
-                <RadioGroupItem value="499" /> ₹499 – Short guidance with 3 key
-                areas
+                <RadioGroupItem value="499" /> ₹499 + 4% payment gateway fee –
+                Short guidance with 3 key areas
               </label>
               <label className="flex items-center gap-2">
-                <RadioGroupItem value="999" /> ₹999 – Detailed aura analysis
+                <RadioGroupItem value="999" /> ₹999 + 4% payment gateway fee –
+                Detailed aura analysis
               </label>
             </RadioGroup>
 

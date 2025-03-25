@@ -11,8 +11,8 @@ const inter = Inter({ subsets: ["latin"] });
 const pixelId = process.env.FB_PIXEL_ID;
 
 export const metadata: Metadata = {
-  title: "Lama Dev School Management Dashboard",
-  description: "Next.js School Management System",
+  title: "Divoo",
+  description: "Divoo, a transformative wellness brand with 11 years of expertise, has been dedicated to helping individuals restore balance in their mind, body, and chakras through aura scanning and healing",
 };
 
 export default function RootLayout({
